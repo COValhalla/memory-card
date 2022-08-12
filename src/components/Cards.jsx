@@ -5,14 +5,14 @@ export default function Cards(props) {
     return (
       <div
         key={img.id}
-        className="flex w-32 justify-center rounded border border-slate-400 p-2 hover:border-slate-500"
+        className="flex justify-center rounded border border-slate-400 p-2 hover:border-slate-500 sm:w-10 lg:w-32"
       >
         <img
           onClick={props.shuffleImages}
           src={img.src}
           alt=""
           id={img.id}
-          className="h-36"
+          className="sm: w-10 lg:h-36 lg:w-auto"
         />
       </div>
     );
