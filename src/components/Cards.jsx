@@ -1,12 +1,10 @@
 import React from 'react';
-import images from './images';
-import aerith from '../assets/images/aerith.webp';
 
-export default function Cards() {
-  const randomImages = images.map((img) => {
+export default function Cards(props) {
+  const randomImages = props.imageArray.map((img) => {
     return (
       <div className="border-2 border-slate-400">
-        <img src={img.src} alt="" />
+        <img onClick={props.shuffleImages} src={img.src} alt="" />
       </div>
     );
   });
