@@ -1,13 +1,12 @@
-import { useState } from 'react';
+import React from 'react';
+import Header from './components/Header';
+import Cards from './components/Cards';
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
     <div className="App">
-      <h1 className="bg-red-500 text-3xl font-bold underline">Hello world!</h1>
+      <Header />
+      <Cards />
     </div>
   );
 }
-
-export default App;
